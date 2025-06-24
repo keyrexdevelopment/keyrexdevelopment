@@ -71,5 +71,5 @@
 ---
 
 <div align="center">
-  <strong style="font-size: 16px">Code. Create. Evolve.</strong>
+  <strong style="font-size: 16px">Was du auch tust, ich werde es dir wegnehmen.</strong>
 </div>
