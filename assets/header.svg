@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220">
   <defs>
     <!-- Dark Mode Gradient Background -->
     <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -8,21 +8,21 @@
     </linearGradient>
 
     <!-- Ambient Subtle Glow -->
-    <radialGradient id="ambient-glow" cx="80%" cy="20%" r="60%">
+    <radialGradient id="ambient-glow" cx="80%" cy="30%" r="60%">
       <stop offset="0%" stop-color="#5865f2" stop-opacity="0.14"/>
       <stop offset="100%" stop-color="#5865f2" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="ambient-blue" cx="10%" cy="80%" r="50%">
+    <radialGradient id="ambient-blue" cx="10%" cy="70%" r="50%">
       <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
     </radialGradient>
 
     <style>
       .card-bg { fill: url(#header-grad); rx: 16px; stroke: #20222e; stroke-width: 1.5; }
-      .title-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+      .title-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
       .name-accent { fill: #818cf8; }
-      .subtitle-text { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14.5px; font-weight: 600; }
+      .subtitle-text { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 600; }
       .desc-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; line-height: 1.5; }
       .desc-highlight { fill: #ffffff; font-weight: 700; }
       .caps-tag { fill: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; font-weight: 600; }
@@ -32,31 +32,31 @@
   </defs>
 
   <!-- Base Card Background -->
-  <rect width="900" height="200" class="card-bg"/>
-  <rect width="900" height="200" fill="url(#ambient-glow)" rx="16"/>
-  <rect width="900" height="200" fill="url(#ambient-blue)" rx="16"/>
+  <rect width="900" height="220" class="card-bg"/>
+  <rect width="900" height="220" fill="url(#ambient-glow)" rx="16"/>
+  <rect width="900" height="220" fill="url(#ambient-blue)" rx="16"/>
 
   <!-- Star Embers -->
-  <circle cx="75" cy="35" r="1.5" class="star-ambient" opacity="0.6"/>
-  <circle cx="220" cy="25" r="1" class="star-ambient" opacity="0.4"/>
-  <circle cx="480" cy="35" r="1.8" class="star-ambient" opacity="0.7"/>
-  <circle cx="750" cy="45" r="1.5" class="star-ambient" opacity="0.5"/>
-  <circle cx="840" cy="25" r="1" class="star-ambient" opacity="0.3"/>
+  <circle cx="75" cy="40" r="1.5" class="star-ambient" opacity="0.6"/>
+  <circle cx="220" cy="30" r="1" class="star-ambient" opacity="0.4"/>
+  <circle cx="480" cy="40" r="1.8" class="star-ambient" opacity="0.7"/>
+  <circle cx="750" cy="50" r="1.5" class="star-ambient" opacity="0.5"/>
+  <circle cx="840" cy="30" r="1" class="star-ambient" opacity="0.3"/>
 
-  <!-- Content Container -->
-  <g transform="translate(55, 45)">
+  <!-- Perfectly Vertically Centered Content -->
+  <g transform="translate(55, 0)">
     <!-- Title -->
-    <text x="0" y="0" class="title-text">Hey, I'm <tspan class="name-accent">keyrex</tspan> 👋</text>
+    <text x="0" y="52" class="title-text">Hey, I'm <tspan class="name-accent">keyrex</tspan> 👋</text>
 
     <!-- Subtitle -->
-    <text x="0" y="26" class="subtitle-text">Independent Software Engineer &amp; Systems Developer</text>
+    <text x="0" y="80" class="subtitle-text">Independent Software Engineer &amp; Systems Developer</text>
 
     <!-- Description -->
-    <text x="0" y="58" class="desc-text">Welcome to my space. I specialize in building <tspan class="desc-highlight">high-performance client extensions</tspan>, reverse-engineered</text>
-    <text x="0" y="78" class="desc-text">desktop tools, and tailored software architectures with zero overhead.</text>
+    <text x="0" y="114" class="desc-text">Welcome to my space. I specialize in building <tspan class="desc-highlight">high-performance client extensions</tspan>, reverse-engineered</text>
+    <text x="0" y="136" class="desc-text">desktop tools, and tailored software architectures with zero overhead.</text>
 
     <!-- Capabilities / Monospace Footer -->
-    <g transform="translate(0, 108)">
+    <g transform="translate(0, 172)">
       <text x="0" y="0" class="caps-tag">Client Architecture</text>
       <circle cx="120" cy="-3.5" r="2.5" class="dot"/>
       <text x="132" y="0" class="caps-tag">Reverse Engineering</text>
