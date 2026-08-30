@@ -1,18 +1,18 @@
 <table width="100%" align="center" border="0" cellspacing="10" cellpadding="0">
-  <!-- ROW 1: ABOUT & VIBE -->
+  <!-- ROW 1: ABOUT & PHILOSOPHY -->
   <tr>
     <td width="58%" valign="top">
       <img src="assets/card_about.svg" width="100%" alt="Hey, I'm keyrex" />
     </td>
     <td width="42%" valign="top">
-      <img src="assets/card_welcome.svg" width="100%" alt="I hope you enjoy exploring my work!" />
+      <img src="assets/card_stack.svg" width="100%" alt="Philosophy & Vision" />
     </td>
   </tr>
 
-  <!-- ROW 2: LARGE SCENERY BANNER -->
+  <!-- ROW 2: STUDIO SCENERY BANNER -->
   <tr>
     <td colspan="2" width="100%" valign="top">
-      <img src="assets/card_bottom_banner.svg" width="100%" alt="Always building, always refining - Keyrex Development" />
+      <img src="assets/card_scenery.svg" width="100%" alt="Welcome to Keyrex Development" />
     </td>
   </tr>
 </table>

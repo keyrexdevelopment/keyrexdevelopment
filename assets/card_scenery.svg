@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" width="920" height="240">
+  <defs>
+    <style>
+      .bg { fill: #111111; rx: 14px; stroke: #242424; stroke-width: 1.5; }
+      .mascot { fill: #ffffff; }
+      .face { fill: #111111; }
+      .pagoda { fill: #181818; }
+      .pagoda-roof { fill: #141414; stroke: #262626; stroke-width: 1.5; }
+      .torii { fill: #1e1e1e; stroke: #2a2a2a; stroke-width: 1.5; }
+      .bubble-bg { fill: #181818; rx: 10px; stroke: #262626; stroke-width: 1; }
+      .title-welcome { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 19px; font-weight: 800; }
+      .text-desc { fill: #b8b8b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12.5px; line-height: 1.5; }
+      .text-sub { fill: #666666; font-family: monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 1px; }
+      .star { fill: #ffffff; }
+      .petal { fill: #ffffff; opacity: 0.65; }
+    </style>
+  </defs>
+  <rect width="920" height="240" class="bg"/>
+
+  <!-- Stars in sky -->
+  <circle cx="50" cy="35" r="1.5" class="star" opacity="0.6"/>
+  <circle cx="150" cy="25" r="1" class="star" opacity="0.4"/>
+  <circle cx="270" cy="40" r="2" class="star" opacity="0.8"/>
+  <circle cx="390" cy="25" r="1.5" class="star" opacity="0.5"/>
+  <circle cx="590" cy="35" r="2" class="star" opacity="0.9"/>
+  <circle cx="760" cy="25" r="1.5" class="star" opacity="0.6"/>
+
+  <!-- Moon Silhouette -->
+  <circle cx="810" cy="55" r="20" fill="#1c1c1c"/>
+  <circle cx="814" cy="50" r="17" fill="#111111"/>
+
+  <!-- Japanese Cyber Pagoda on Right -->
+  <g transform="translate(710, 65)">
+    <!-- Base -->
+    <polygon points="25,170 135,170 125,115 35,115" class="pagoda"/>
+    <!-- Level 1 Roof -->
+    <path d="M10 120 Q80 100 150 120 L140 110 Q80 92 20 110 Z" class="pagoda-roof"/>
+    <polygon points="45,110 115,110 108,75 52,75" class="pagoda"/>
+    <!-- Level 2 Roof -->
+    <path d="M30 80 Q80 65 130 80 L122 72 Q80 58 38 72 Z" class="pagoda-roof"/>
+    <polygon points="58,72 102,72 98,45 62,45" class="pagoda"/>
+    <!-- Level 3 Roof -->
+    <path d="M45 48 Q80 36 115 48 L108 40 Q80 28 52 40 Z" class="pagoda-roof"/>
+    <!-- Spire -->
+    <line x1="80" y1="28" x2="80" y2="8" stroke="#ffffff" stroke-width="1.8"/>
+  </g>
+
+  <!-- Left Side: Mascots Line-up -->
+  <!-- Mascot 1 (Waving) -->
+  <g transform="translate(60, 110)">
+    <ellipse cx="28" cy="120" rx="28" ry="7" fill="#0c0c0c"/>
+    <path d="M0 115 C0 65, 12 35, 28 35 C44 35, 56 65, 56 115 Z" class="mascot"/>
+    <circle cx="28" cy="24" r="22" class="mascot"/>
+    <circle cx="22" cy="22" r="2" class="face"/><circle cx="34" cy="22" r="2" class="face"/>
+    <path d="M25 27 Q28 31 31 27" fill="none" stroke="#111111" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- Waving Arm -->
+    <path d="M50 48 Q66 28 64 15 Q58 12 52 35" fill="#ffffff"/>
+  </g>
+
+  <!-- Mascot 2 (Scarf) -->
+  <g transform="translate(135, 115)">
+    <ellipse cx="28" cy="115" rx="28" ry="7" fill="#0c0c0c"/>
+    <path d="M0 110 C0 65, 12 35, 28 35 C44 35, 56 65, 56 110 Z" class="mascot"/>
+    <circle cx="28" cy="24" r="22" class="mascot"/>
+    <circle cx="22" cy="22" r="2" class="face"/><circle cx="34" cy="22" r="2" class="face"/>
+    <path d="M25 27 Q28 31 31 27" fill="none" stroke="#111111" stroke-width="1.6" stroke-linecap="round"/>
+    <!-- Scarf in silver -->
+    <path d="M10 38 Q28 46 46 38 Q40 48 10 46 Z" fill="#cccccc"/>
+    <rect x="34" y="42" width="7" height="22" rx="2" fill="#cccccc" transform="rotate(12 34 42)"/>
+  </g>
+
+  <!-- Mascot 3 (Sitting Cozy) -->
+  <g transform="translate(205, 120)">
+    <ellipse cx="28" cy="110" rx="28" ry="7" fill="#0c0c0c"/>
+    <path d="M0 105 C0 65, 12 35, 28 35 C44 35, 56 65, 56 105 Z" class="mascot"/>
+    <circle cx="28" cy="24" r="22" class="mascot"/>
+    <circle cx="22" cy="22" r="2" class="face"/><circle cx="34" cy="22" r="2" class="face"/>
+    <path d="M25 27 Q28 31 31 27" fill="none" stroke="#111111" stroke-width="1.6" stroke-linecap="round"/>
+  </g>
+
+  <!-- Center Card: Studio Welcome Info -->
+  <g transform="translate(295, 38)">
+    <rect width="395" height="165" class="bubble-bg"/>
+    <g transform="translate(24, 28)">
+      <text x="0" y="0" class="text-sub">// KEYREX STUDIO</text>
+      <text x="0" y="26" class="title-welcome">Welcome to Keyrex Development</text>
+      <text x="0" y="52" class="text-desc">Exploring the frontiers of client architecture, reverse-</text>
+      <text x="0" y="72" class="text-desc">engineered hooks &amp; tailored high-speed desktop software.</text>
+      
+      <!-- Tagline -->
+      <text x="0" y="108" class="text-sub">✦ Built with passion • Zero bloat, pure speed • 2026</text>
+    </g>
+  </g>
+
+  <!-- Floating Blossom Petals -->
+  <circle cx="280" cy="55" r="2.5" class="petal"/>
+  <circle cx="320" cy="85" r="1.8" class="petal"/>
+  <circle cx="250" cy="105" r="2.2" class="petal"/>
+  <circle cx="750" cy="45" r="3" class="petal"/>
+  <circle cx="790" cy="75" r="2" class="petal"/>
+  <circle cx="700" cy="95" r="2.5" class="petal"/>
+</svg>
