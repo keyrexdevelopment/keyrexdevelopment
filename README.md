@@ -1,11 +1,11 @@
 <table width="100%" align="center" border="0" cellspacing="10" cellpadding="0">
-  <!-- ROW 1: ABOUT & PHILOSOPHY -->
+  <!-- ROW 1: ABOUT & WELCOME (EXACT SAME HEIGHT) -->
   <tr>
     <td width="58%" valign="top">
       <img src="assets/card_about.svg" width="100%" alt="Hey, I'm keyrex" />
     </td>
     <td width="42%" valign="top">
-      <img src="assets/card_stack.svg" width="100%" alt="Philosophy & Vision" />
+      <img src="assets/card_welcome.svg" width="100%" alt="I hope you enjoy exploring my work!" />
     </td>
   </tr>
 
