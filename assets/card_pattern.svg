@@ -1,9 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 170 395" width="170" height="395">
   <defs>
     <style>
-      .bg { fill: #171717; rx: 12px; stroke: #2a2a2a; stroke-width: 1.5; }
-      .circle-base { fill: #222222; stroke: #333333; stroke-width: 1.5; }
-      .emblem-letter { fill: #cfc2ae; font-family: "Courier New", monospace, sans-serif; font-size: 32px; font-weight: 900; }
+      .bg { fill: #111111; rx: 12px; stroke: #262626; stroke-width: 1.5; }
+      .circle-base { fill: #1a1a1a; stroke: #2d2d2d; stroke-width: 1.5; }
+      .emblem-letter { fill: #ffffff; font-family: "Courier New", monospace, sans-serif; font-size: 32px; font-weight: 900; }
     </style>
   </defs>
   <rect width="170" height="395" class="bg"/>

@@ -8,18 +8,18 @@
       <img src="assets/card_mountain.svg" width="100%" alt="I hope you enjoy KeyWare mods!" />
     </td>
     <td width="26%" rowspan="2" valign="top">
-      <img src="assets/card_pattern.svg" width="100%" alt="KeyWare Pattern" />
+      <img src="assets/card_pattern.svg" width="100%" alt="KeyWare Monogram" />
     </td>
   </tr>
 
   <!-- ROW 2 -->
   <tr>
     <td width="24%" valign="top">
-      <img src="assets/card_rpc.svg" width="100%" alt="Discord Status" />
+      <img src="assets/card_shaders.svg" width="100%" alt="Theme Shaders Engine" />
     </td>
     <td width="50%" valign="top">
       <a href="https://github.com/keyrexdevelopment/keyware-dms">
-        <img src="assets/card_landscape.svg" width="100%" alt="Explore KeyWare" />
+        <img src="assets/card_landscape.svg" width="100%" alt="Explore KeyWare DMs" />
       </a>
     </td>
   </tr>
@@ -30,10 +30,10 @@
       <img src="assets/card_topo.svg" width="100%" alt="Topography" />
     </td>
     <td width="48%" valign="top">
-      <img src="assets/card_calendar.svg" width="100%" alt="GitHub Calendar" />
+      <img src="assets/card_calendar.svg" width="100%" alt="GitHub Activity" />
     </td>
     <td width="26%" valign="top">
-      <img src="assets/card_audio.svg" width="100%" alt="Audio Engine" />
+      <img src="assets/card_suite.svg" width="100%" alt="KeyWare Core Suite" />
     </td>
   </tr>
 
