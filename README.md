@@ -1,6 +1,13 @@
-<p align="center">
-  <img src="assets/header.svg" alt="Keyrex Development Banner" width="100%" />
-</p>
+<table width="100%" align="center" border="0" cellspacing="10" cellpadding="0">
+  <tr>
+    <td width="58%" valign="top">
+      <img src="assets/card_about.svg" width="100%" alt="Hey, I'm keyrex" />
+    </td>
+    <td width="42%" valign="top">
+      <img src="assets/card_welcome.svg" width="100%" alt="I hope you enjoy exploring my work!" />
+    </td>
+  </tr>
+</table>
 
 <p align="center">
   <img src="https://img.shields.io/badge/ENGINEERING-CLIENT%20MODIFICATIONS-111214?style=for-the-badge&logo=electron&logoColor=61DAFB" />

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 240" width="380" height="240">
+  <defs>
+    <style>
+      .bg { fill: #111111; rx: 14px; stroke: #242424; stroke-width: 1.5; }
+      .mascot { fill: #ffffff; }
+      .face { fill: #111111; }
+      .mountain1 { fill: #171717; }
+      .mountain2 { fill: #1e1e1e; }
+      .bubble-bg { fill: #181818; rx: 10px; stroke: #262626; stroke-width: 1; }
+      .text-welcome { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 800; }
+      .text-sub { fill: #999999; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; line-height: 1.4; }
+      .star { fill: #ffffff; }
+    </style>
+  </defs>
+  <rect width="380" height="240" class="bg"/>
+
+  <!-- Stars in sky -->
+  <circle cx="45" cy="35" r="1.5" class="star" opacity="0.8"/>
+  <circle cx="110" cy="22" r="1" class="star" opacity="0.5"/>
+  <circle cx="180" cy="40" r="2" class="star" opacity="0.9"/>
+  <circle cx="290" cy="25" r="1.5" class="star" opacity="0.7"/>
+  <circle cx="340" cy="50" r="1" class="star" opacity="0.4"/>
+
+  <!-- Moon Silhouette -->
+  <circle cx="320" cy="38" r="13" fill="#1c1c1c"/>
+  <circle cx="324" cy="34" r="11" fill="#111111"/>
+
+  <!-- Mountain Silhouette -->
+  <polygon points="0,240 75,115 155,240" class="mountain1"/>
+  <polygon points="100,240 200,85 300,240" class="mountain2"/>
+  <polygon points="230,240 310,130 380,240" class="mountain1"/>
+
+  <!-- Flag on mountain summit -->
+  <line x1="200" y1="85" x2="200" y2="60" stroke="#ffffff" stroke-width="2"/>
+  <polygon points="200,60 225,68 200,76" fill="#ffffff"/>
+
+  <!-- Speech Bubble on Left -->
+  <g transform="translate(24, 105)">
+    <rect width="210" height="75" class="bubble-bg"/>
+    <text x="16" y="30" class="text-welcome">I hope you enjoy</text>
+    <text x="16" y="48" class="text-welcome">exploring my work!</text>
+    <text x="16" y="66" class="text-sub">Built with zero bloat &amp; pure speed.</text>
+  </g>
+
+  <!-- Mascot in scarf sitting on right -->
+  <g transform="translate(255, 130)">
+    <ellipse cx="36" cy="100" rx="34" ry="8" fill="#0c0c0c"/>
+    <path d="M5 95 C5 55, 18 32, 36 32 C54 32, 68 55, 68 95 Z" class="mascot"/>
+    <circle cx="36" cy="24" r="24" class="mascot"/>
+    <!-- Face -->
+    <circle cx="29" cy="22" r="2.2" class="face"/>
+    <circle cx="43" cy="22" r="2.2" class="face"/>
+    <path d="M33 28 Q36 32 39 28" fill="none" stroke="#111111" stroke-width="1.8" stroke-linecap="round"/>
+    <!-- Scarf in silver -->
+    <path d="M14 40 Q36 48 58 40 Q50 50 14 48 Z" fill="#cccccc"/>
+    <rect x="42" y="44" width="9" height="26" rx="2.5" fill="#cccccc" transform="rotate(15 42 44)"/>
+  </g>
+</svg>
