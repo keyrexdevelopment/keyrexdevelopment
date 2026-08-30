@@ -1,33 +1,36 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="920" height="180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 200" width="920" height="200">
   <defs>
     <style>
       .bg { fill: #121212; rx: 16px; stroke: #262626; stroke-width: 1.5; }
-      .badge-bg { fill: #1e1e1e; rx: 6px; stroke: #333333; stroke-width: 1; }
-      .badge-text { fill: #ffffff; font-family: monospace; font-size: 10px; font-weight: 700; letter-spacing: 1px; }
+      .badge-bg { fill: #1c1c1c; rx: 5px; stroke: #2f2f2f; stroke-width: 1; }
+      .badge-text { fill: #e0e0e0; font-family: monospace; font-size: 9.5px; font-weight: 700; letter-spacing: 1.5px; }
       .title { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 20px; font-weight: 800; letter-spacing: 0.5px; }
-      .desc { fill: #cccccc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; line-height: 1.5; }
-      .feat-pill { fill: #1a1a1a; rx: 6px; stroke: #2a2a2a; stroke-width: 1; }
-      .feat-text { fill: #888888; font-family: monospace; font-size: 11px; }
+      .desc { fill: #b8b8b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; line-height: 1.5; }
+      .feat-pill { fill: #181818; rx: 6px; stroke: #2a2a2a; stroke-width: 1; }
+      .feat-text { fill: #8a8a8a; font-family: monospace; font-size: 10.5px; font-weight: 600; }
       .feat-bold { fill: #ffffff; font-weight: 700; }
       .btn-bg { fill: #ffffff; rx: 8px; }
-      .btn-text { fill: #121212; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 700; }
-      .monogram-bg { fill: #181818; rx: 12px; stroke: #282828; stroke-width: 1; }
+      .btn-text { fill: #121212; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; font-weight: 800; }
+      .monogram-bg { fill: #181818; rx: 14px; stroke: #262626; stroke-width: 1.5; }
+      .icon-stroke { stroke: #ffffff; stroke-width: 2; fill: none; stroke-linecap: round; stroke-linejoin: round; }
     </style>
   </defs>
-  <rect width="920" height="180" class="bg"/>
+  <rect width="920" height="200" class="bg"/>
 
   <!-- Left Icon / Monogram -->
-  <g transform="translate(30, 35)">
-    <rect width="110" height="110" class="monogram-bg"/>
+  <g transform="translate(35, 40)">
+    <rect width="120" height="120" class="monogram-bg"/>
     <!-- KW Monogram Artwork -->
-    <path d="M35 30 L35 80 M35 55 L70 30 M45 50 L75 80" stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none"/>
+    <path d="M40 32 L40 88 M40 60 L78 32 M50 54 L84 88" stroke="#ffffff" stroke-width="5" stroke-linecap="round" fill="none"/>
   </g>
 
   <!-- Middle Content -->
-  <g transform="translate(165, 32)">
+  <g transform="translate(180, 32)">
     <!-- Badge -->
-    <rect width="135" height="22" class="badge-bg"/>
-    <text x="10" y="15" class="badge-text">★ FEATURED WORK</text>
+    <g transform="translate(0, 0)">
+      <rect width="140" height="22" class="badge-bg"/>
+      <text x="12" y="15" class="badge-text">FEATURED WORK</text>
+    </g>
 
     <!-- Title -->
     <text x="0" y="48" class="title">KEYWARE // DMs</text>
@@ -36,22 +39,37 @@
     <text x="0" y="74" class="desc">Modular Direct Messages workspace for BetterDiscord featuring per-user audio interception,</text>
     <text x="0" y="94" class="desc">0ms synchronous React-Safe DOM ordering, and real-time GPU particle shaders.</text>
 
-    <!-- Feature Pills -->
-    <g transform="translate(0, 108)">
-      <rect x="0" y="0" width="130" height="24" class="feat-pill"/>
-      <text x="10" y="16" class="feat-text"><tspan class="feat-bold">⚡ 0ms</tspan> Instant Sync</text>
+    <!-- Feature Pills with Pure Vector Icons (NO EMOJIS) -->
+    <g transform="translate(0, 116)">
+      <!-- Pill 1: 0ms Sync -->
+      <g transform="translate(0, 0)">
+        <rect width="130" height="28" class="feat-pill"/>
+        <!-- Bolt Icon -->
+        <polygon points="17,8 11,16 15,16 13,22 19,14 15,14" fill="#ffffff"/>
+        <text x="26" y="18" class="feat-text"><tspan class="feat-bold">0ms</tspan> Instant Sync</text>
+      </g>
 
-      <rect x="140" y="0" width="140" height="24" class="feat-pill"/>
-      <text x="10" y="16" class="feat-text"><tspan class="feat-bold">🎧 Audio</tspan> Dispatcher</text>
+      <!-- Pill 2: Audio Dispatcher -->
+      <g transform="translate(142, 0)">
+        <rect width="150" height="28" class="feat-pill"/>
+        <!-- Audio waves icon -->
+        <path d="M14 18 L14 10 M17 21 L17 7 M20 18 L20 10 M23 16 L23 12" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round"/>
+        <text x="30" y="18" class="feat-text"><tspan class="feat-bold">Audio</tspan> Dispatcher</text>
+      </g>
 
-      <rect x="290" y="0" width="130" height="24" class="feat-pill"/>
-      <text x="10" y="16" class="feat-text"><tspan class="feat-bold">✨ UI</tspan> Shaders Engine</text>
+      <!-- Pill 3: UI Shaders -->
+      <g transform="translate(304, 0)">
+        <rect width="140" height="28" class="feat-pill"/>
+        <!-- Sparkle icon -->
+        <path d="M12 14 Q16 14 16 10 Q16 14 20 14 Q16 14 16 18 Q16 14 12 14 Z" fill="#ffffff"/>
+        <text x="27" y="18" class="feat-text"><tspan class="feat-bold">GPU</tspan> Shaders</text>
+      </g>
     </g>
   </g>
 
   <!-- Right Button: View on GitHub -->
-  <g transform="translate(730, 68)">
-    <rect width="155" height="44" class="btn-bg"/>
-    <text x="24" y="27" class="btn-text">View Project ↗</text>
+  <g transform="translate(735, 78)">
+    <rect width="150" height="44" class="btn-bg"/>
+    <text x="22" y="27" class="btn-text">View Project ↗</text>
   </g>
 </svg>

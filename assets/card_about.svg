@@ -45,7 +45,7 @@
   <!-- Right Side: Content Box -->
   <g transform="translate(185, 30)">
     <text x="0" y="0" class="sub-header">// DEVELOPER &amp; CREATOR</text>
-    <text x="0" y="28" class="text-title">Hey, I'm keyrex 👋</text>
+    <text x="0" y="28" class="text-title">Hey, I'm keyrex</text>
     
     <!-- Speech Box -->
     <rect x="0" y="44" width="325" height="110" class="bubble-bg"/>
