@@ -1,69 +1,119 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 220" width="900" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 240" width="920" height="240">
   <defs>
-    <!-- Dark Mode Gradient Background -->
-    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0b0e"/>
-      <stop offset="50%" stop-color="#11131a"/>
-      <stop offset="100%" stop-color="#0c0d12"/>
+    <!-- Background Gradient -->
+    <linearGradient id="main-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0c10"/>
+      <stop offset="50%" stop-color="#0e1117"/>
+      <stop offset="100%" stop-color="#0c0e14"/>
     </linearGradient>
 
-    <!-- Ambient Subtle Glow -->
-    <radialGradient id="ambient-glow" cx="80%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#5865f2" stop-opacity="0.14"/>
-      <stop offset="100%" stop-color="#5865f2" stop-opacity="0"/>
+    <!-- Top Border Highlight Glow -->
+    <linearGradient id="top-border-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0"/>
+      <stop offset="30%" stop-color="#6366f1" stop-opacity="0.8"/>
+      <stop offset="70%" stop-color="#a855f7" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Ambient Illumination -->
+    <radialGradient id="glow-right" cx="85%" cy="30%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#6366f1" stop-opacity="0"/>
     </radialGradient>
 
-    <radialGradient id="ambient-blue" cx="10%" cy="70%" r="50%">
-      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08"/>
+    <radialGradient id="glow-left" cx="15%" cy="70%" r="45%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.10"/>
       <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
     </radialGradient>
 
+    <!-- Dot Pattern -->
+    <pattern id="dot-grid" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#ffffff" fill-opacity="0.04"/>
+    </pattern>
+
     <style>
-      .card-bg { fill: url(#header-grad); rx: 16px; stroke: #20222e; stroke-width: 1.5; }
-      .title-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
-      .name-accent { fill: #818cf8; }
-      .subtitle-text { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14px; font-weight: 600; }
-      .desc-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; line-height: 1.5; }
-      .desc-highlight { fill: #ffffff; font-weight: 700; }
-      .caps-tag { fill: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; font-weight: 600; }
-      .dot { fill: #475569; }
-      .star-ambient { fill: #ffffff; }
+      .card-border { fill: url(#main-bg); rx: 16px; stroke: #1e222d; stroke-width: 1.5; }
+      .tag-pill { fill: #141721; rx: 12px; stroke: #262c3d; stroke-width: 1; }
+      .tag-text { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 10.5px; font-weight: 700; letter-spacing: 0.5px; }
+      .dot-live { fill: #22c55e; }
+      .title { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 28px; font-weight: 800; letter-spacing: -0.5px; }
+      .title-name { fill: #818cf8; }
+      .desc-line { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; line-height: 1.5; }
+      .desc-white { fill: #ffffff; font-weight: 600; }
+      .code-card { fill: #0a0c12; rx: 10px; stroke: #1e222d; stroke-width: 1; }
+      .code-header { fill: #11141d; rx: 10px 10px 0 0; }
+      .c-red { fill: #ef4444; } .c-yellow { fill: #eab308; } .c-green { fill: #22c55e; }
+      .code-text { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11px; }
+      .ck-kw { fill: #c084fc; } .ck-var { fill: #60a5fa; } .ck-str { fill: #a5f3fc; } .ck-punc { fill: #64748b; }
+      .pill-box { fill: #12151f; rx: 6px; stroke: #222736; stroke-width: 1; }
+      .pill-label { fill: #cbd5e1; font-family: monospace; font-size: 11px; font-weight: 600; }
     </style>
   </defs>
 
-  <!-- Base Card Background -->
-  <rect width="900" height="220" class="card-bg"/>
-  <rect width="900" height="220" fill="url(#ambient-glow)" rx="16"/>
-  <rect width="900" height="220" fill="url(#ambient-blue)" rx="16"/>
+  <!-- Card Background -->
+  <rect width="920" height="240" class="card-border"/>
+  <rect width="920" height="240" fill="url(#dot-grid)" rx="16"/>
+  <rect width="920" height="240" fill="url(#glow-right)" rx="16"/>
+  <rect width="920" height="240" fill="url(#glow-left)" rx="16"/>
 
-  <!-- Star Embers -->
-  <circle cx="75" cy="40" r="1.5" class="star-ambient" opacity="0.6"/>
-  <circle cx="220" cy="30" r="1" class="star-ambient" opacity="0.4"/>
-  <circle cx="480" cy="40" r="1.8" class="star-ambient" opacity="0.7"/>
-  <circle cx="750" cy="50" r="1.5" class="star-ambient" opacity="0.5"/>
-  <circle cx="840" cy="30" r="1" class="star-ambient" opacity="0.3"/>
+  <!-- Sleek Top Border Accent Line -->
+  <path d="M 30 1 Q 460 1 890 1" stroke="url(#top-border-glow)" stroke-width="2" fill="none"/>
 
-  <!-- Perfectly Vertically Centered Content -->
-  <g transform="translate(55, 0)">
-    <!-- Title -->
-    <text x="0" y="52" class="title-text">Hey, I'm <tspan class="name-accent">keyrex</tspan> 👋</text>
+  <!-- LEFT COLUMN: Intro & Content -->
+  <g transform="translate(45, 36)">
+    <!-- Status Pill -->
+    <g transform="translate(0, 0)">
+      <rect width="185" height="24" class="tag-pill"/>
+      <circle cx="14" cy="12" r="3.5" class="dot-live"/>
+      <text x="25" y="15.5" class="tag-text">DEVELOPER &amp; CREATOR</text>
+    </g>
 
-    <!-- Subtitle -->
-    <text x="0" y="80" class="subtitle-text">Independent Software Engineer &amp; Systems Developer</text>
+    <!-- Main Title -->
+    <text x="0" y="54" class="title">Hey, I'm <tspan class="title-name">keyrex</tspan> 👋</text>
 
-    <!-- Description -->
-    <text x="0" y="114" class="desc-text">Welcome to my space. I specialize in building <tspan class="desc-highlight">high-performance client extensions</tspan>, reverse-engineered</text>
-    <text x="0" y="136" class="desc-text">desktop tools, and tailored software architectures with zero overhead.</text>
+    <!-- Subtitle / Bio -->
+    <text x="0" y="82" class="desc-line">Welcome to my space. I specialize in building <tspan class="desc-white">high-performance client extensions</tspan>,</text>
+    <text x="0" y="102" class="desc-line">reverse-engineered desktop tools, and zero-overhead software architectures.</text>
 
-    <!-- Capabilities / Monospace Footer -->
-    <g transform="translate(0, 172)">
-      <text x="0" y="0" class="caps-tag">Client Architecture</text>
-      <circle cx="120" cy="-3.5" r="2.5" class="dot"/>
-      <text x="132" y="0" class="caps-tag">Reverse Engineering</text>
-      <circle cx="266" cy="-3.5" r="2.5" class="dot"/>
-      <text x="278" y="0" class="caps-tag">UI &amp; GPU Shaders</text>
-      <circle cx="396" cy="-3.5" r="2.5" class="dot"/>
-      <text x="408" y="0" class="caps-tag">Zero Bloat Systems</text>
+    <!-- Capability Pills -->
+    <g transform="translate(0, 126)">
+      <!-- Pill 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="145" height="28" class="pill-box"/>
+        <text x="12" y="18" class="pill-label">⚡ Client Architecture</text>
+      </g>
+      <!-- Pill 2 -->
+      <g transform="translate(155, 0)">
+        <rect width="150" height="28" class="pill-box"/>
+        <text x="12" y="18" class="pill-label">⚙️ Reverse Engineering</text>
+      </g>
+      <!-- Pill 3 -->
+      <g transform="translate(315, 0)">
+        <rect width="140" height="28" class="pill-box"/>
+        <text x="12" y="18" class="pill-label">✨ UI &amp; GPU Shaders</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- RIGHT COLUMN: Floating Code Terminal Card -->
+  <g transform="translate(565, 36)">
+    <rect width="310" height="168" class="code-card"/>
+    <rect width="310" height="26" class="code-header"/>
+    
+    <!-- Window Controls -->
+    <circle cx="16" cy="13" r="3.5" class="c-red"/>
+    <circle cx="28" cy="13" r="3.5" class="c-yellow"/>
+    <circle cx="40" cy="13" r="3.5" class="c-green"/>
+    <text x="60" y="17" fill="#475569" font-family="monospace" font-size="10">keyrex.config.js</text>
+
+    <!-- Code Lines -->
+    <g transform="translate(18, 48)">
+      <text x="0" y="0" class="code-text"><tspan class="ck-kw">const</tspan> <tspan class="ck-var">developer</tspan> <tspan class="ck-punc">=</tspan> <tspan class="ck-punc">{</tspan></text>
+      <text x="14" y="18" class="code-text"><tspan class="ck-var">name</tspan><tspan class="ck-punc">:</tspan> <tspan class="ck-str">"keyrex"</tspan><tspan class="ck-punc">,</tspan></text>
+      <text x="14" y="36" class="code-text"><tspan class="ck-var">role</tspan><tspan class="ck-punc">:</tspan> <tspan class="ck-str">"Lead Engineer"</tspan><tspan class="ck-punc">,</tspan></text>
+      <text x="14" y="54" class="code-text"><tspan class="ck-var">focus</tspan><tspan class="ck-punc">:</tspan> <tspan class="ck-punc">[</tspan><tspan class="ck-str">"Client Mods"</tspan><tspan class="ck-punc">,</tspan> <tspan class="ck-str">"C++"</tspan><tspan class="ck-punc">,</tspan> <tspan class="ck-str">"TS"</tspan><tspan class="ck-punc">],</tspan></text>
+      <text x="14" y="72" class="code-text"><tspan class="ck-var">overhead</tspan><tspan class="ck-punc">:</tspan> <tspan class="ck-str">"0ms"</tspan></text>
+      <text x="0" y="90" class="code-text"><tspan class="ck-punc">};</tspan></text>
     </g>
   </g>
 </svg>
