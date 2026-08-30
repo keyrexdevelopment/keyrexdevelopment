@@ -9,9 +9,3 @@
     <img src="https://img.shields.io/badge/COMMUNITY-KEYREX'S%20WARE-5865f2?style=for-the-badge&logo=discord&logoColor=white" />
   </a>
 </p>
-
----
-
-<p align="center">
-  <sub>Crafted with precision by <b><a href="https://github.com/keyrexdevelopment">keyrex</a></b>. All systems operational.</sub>
-</p>

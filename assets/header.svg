@@ -1,53 +1,41 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 220" width="920" height="220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="920" height="180">
   <defs>
-    <!-- Background Gradients & Ambient Glow -->
-    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0c0d12"/>
       <stop offset="50%" stop-color="#12131a"/>
       <stop offset="100%" stop-color="#0e0f14"/>
     </linearGradient>
-    <radialGradient id="glow-center" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#5865f2" stop-opacity="0.15"/>
+    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#5865f2" stop-opacity="0.16"/>
       <stop offset="100%" stop-color="#5865f2" stop-opacity="0"/>
     </radialGradient>
     <style>
-      .bg-rect { fill: url(#bg-grad); rx: 16px; stroke: #232530; stroke-width: 1.5; }
-      .tag-pill { fill: #1c1e28; rx: 5px; stroke: #313547; stroke-width: 1; }
-      .tag-text { fill: #8b92b3; font-family: monospace; font-size: 10.5px; font-weight: 700; letter-spacing: 1.5px; }
-      .title-main { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 30px; font-weight: 800; letter-spacing: -0.5px; }
-      .title-name { fill: #7c88ff; }
-      .desc-text { fill: #b0b4c8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14.5px; line-height: 1.6; }
+      .bg-box { fill: url(#bg); rx: 16px; stroke: #232530; stroke-width: 1.5; }
+      .title { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+      .name-highlight { fill: #7c88ff; }
+      .desc { fill: #b4b8cc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; line-height: 1.6; }
       .desc-bold { fill: #ffffff; font-weight: 600; }
+      .sub-line { fill: #6b7088; font-family: monospace; font-size: 12px; font-weight: 600; }
       .star { fill: #ffffff; }
     </style>
   </defs>
 
-  <rect width="920" height="220" class="bg-rect"/>
-  <rect width="920" height="220" fill="url(#glow-center)" rx="16"/>
+  <rect width="920" height="180" class="bg-box"/>
+  <rect width="920" height="180" fill="url(#glow)" rx="16"/>
 
   <!-- Subtle ambient stars -->
-  <circle cx="80" cy="40" r="1.5" class="star" opacity="0.6"/>
-  <circle cx="200" cy="30" r="1" class="star" opacity="0.4"/>
-  <circle cx="480" cy="45" r="2" class="star" opacity="0.8"/>
-  <circle cx="740" cy="35" r="1.5" class="star" opacity="0.5"/>
-  <circle cx="860" cy="50" r="1" class="star" opacity="0.4"/>
+  <circle cx="90" cy="40" r="1.5" class="star" opacity="0.6"/>
+  <circle cx="280" cy="30" r="1" class="star" opacity="0.4"/>
+  <circle cx="580" cy="45" r="1.8" class="star" opacity="0.7"/>
+  <circle cx="820" cy="35" r="1.5" class="star" opacity="0.5"/>
 
-  <!-- Centered Content -->
-  <g transform="translate(60, 40)">
-    <!-- Tag Pill -->
-    <g transform="translate(0, 0)">
-      <rect width="260" height="24" class="tag-pill"/>
-      <text x="12" y="16" class="tag-text">KEYREX DEVELOPMENT // STUDIO</text>
-    </g>
-
-    <!-- Main Title -->
-    <text x="0" y="58" class="title-main">Hey, my name is <tspan class="title-name">keyrex</tspan> 👋</text>
-
-    <!-- Subtitle / Welcome Text -->
-    <text x="0" y="94" class="desc-text">Welcome to my development space. I'm an independent software engineer focused on building</text>
-    <text x="0" y="116" class="desc-text"><tspan class="desc-bold">high-performance client extensions</tspan>, reverse-engineered desktop tools, and tailored systems.</text>
+  <!-- Main Content Centered Vertically & Left-aligned -->
+  <g transform="translate(60, 48)">
+    <text x="0" y="0" class="title">Hey, my name is <tspan class="name-highlight">keyrex</tspan> 👋</text>
     
-    <!-- Philosophy line -->
-    <text x="0" y="148" fill="#71768e" font-family="monospace" font-size="12px">✦ Zero bloat • Pure speed • Bespoke client architecture</text>
+    <text x="0" y="36" class="desc">Welcome to my development space. I'm an independent software engineer focused on building</text>
+    <text x="0" y="58" class="desc"><tspan class="desc-bold">high-performance client extensions</tspan>, reverse-engineered desktop tools, and tailored systems.</text>
+    
+    <text x="0" y="90" class="sub-line">✦ Zero bloat • Pure speed • Bespoke client architecture</text>
   </g>
 </svg>
