@@ -1,41 +1,69 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 180" width="920" height="180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="900" height="200">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0c0d12"/>
-      <stop offset="50%" stop-color="#12131a"/>
-      <stop offset="100%" stop-color="#0e0f14"/>
+    <!-- Dark Mode Gradient Background -->
+    <linearGradient id="header-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0b0e"/>
+      <stop offset="50%" stop-color="#11131a"/>
+      <stop offset="100%" stop-color="#0c0d12"/>
     </linearGradient>
-    <radialGradient id="glow" cx="50%" cy="40%" r="60%">
-      <stop offset="0%" stop-color="#5865f2" stop-opacity="0.16"/>
+
+    <!-- Ambient Subtle Glow -->
+    <radialGradient id="ambient-glow" cx="80%" cy="20%" r="60%">
+      <stop offset="0%" stop-color="#5865f2" stop-opacity="0.14"/>
       <stop offset="100%" stop-color="#5865f2" stop-opacity="0"/>
     </radialGradient>
+
+    <radialGradient id="ambient-blue" cx="10%" cy="80%" r="50%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </radialGradient>
+
     <style>
-      .bg-box { fill: url(#bg); rx: 16px; stroke: #232530; stroke-width: 1.5; }
-      .title { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
-      .name-highlight { fill: #7c88ff; }
-      .desc { fill: #b4b8cc; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 15px; line-height: 1.6; }
-      .desc-bold { fill: #ffffff; font-weight: 600; }
-      .sub-line { fill: #6b7088; font-family: monospace; font-size: 12px; font-weight: 600; }
-      .star { fill: #ffffff; }
+      .card-bg { fill: url(#header-grad); rx: 16px; stroke: #20222e; stroke-width: 1.5; }
+      .title-text { fill: #ffffff; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+      .name-accent { fill: #818cf8; }
+      .subtitle-text { fill: #94a3b8; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 14.5px; font-weight: 600; }
+      .desc-text { fill: #cbd5e1; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13.5px; line-height: 1.5; }
+      .desc-highlight { fill: #ffffff; font-weight: 700; }
+      .caps-tag { fill: #64748b; font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace; font-size: 11.5px; font-weight: 600; }
+      .dot { fill: #475569; }
+      .star-ambient { fill: #ffffff; }
     </style>
   </defs>
 
-  <rect width="920" height="180" class="bg-box"/>
-  <rect width="920" height="180" fill="url(#glow)" rx="16"/>
+  <!-- Base Card Background -->
+  <rect width="900" height="200" class="card-bg"/>
+  <rect width="900" height="200" fill="url(#ambient-glow)" rx="16"/>
+  <rect width="900" height="200" fill="url(#ambient-blue)" rx="16"/>
 
-  <!-- Subtle ambient stars -->
-  <circle cx="90" cy="40" r="1.5" class="star" opacity="0.6"/>
-  <circle cx="280" cy="30" r="1" class="star" opacity="0.4"/>
-  <circle cx="580" cy="45" r="1.8" class="star" opacity="0.7"/>
-  <circle cx="820" cy="35" r="1.5" class="star" opacity="0.5"/>
+  <!-- Star Embers -->
+  <circle cx="75" cy="35" r="1.5" class="star-ambient" opacity="0.6"/>
+  <circle cx="220" cy="25" r="1" class="star-ambient" opacity="0.4"/>
+  <circle cx="480" cy="35" r="1.8" class="star-ambient" opacity="0.7"/>
+  <circle cx="750" cy="45" r="1.5" class="star-ambient" opacity="0.5"/>
+  <circle cx="840" cy="25" r="1" class="star-ambient" opacity="0.3"/>
 
-  <!-- Main Content Centered Vertically & Left-aligned -->
-  <g transform="translate(60, 48)">
-    <text x="0" y="0" class="title">Hey, my name is <tspan class="name-highlight">keyrex</tspan> 👋</text>
-    
-    <text x="0" y="36" class="desc">Welcome to my development space. I'm an independent software engineer focused on building</text>
-    <text x="0" y="58" class="desc"><tspan class="desc-bold">high-performance client extensions</tspan>, reverse-engineered desktop tools, and tailored systems.</text>
-    
-    <text x="0" y="90" class="sub-line">✦ Zero bloat • Pure speed • Bespoke client architecture</text>
+  <!-- Content Container -->
+  <g transform="translate(55, 45)">
+    <!-- Title -->
+    <text x="0" y="0" class="title-text">Hey, I'm <tspan class="name-accent">keyrex</tspan> 👋</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="26" class="subtitle-text">Independent Software Engineer &amp; Systems Developer</text>
+
+    <!-- Description -->
+    <text x="0" y="58" class="desc-text">Welcome to my space. I specialize in building <tspan class="desc-highlight">high-performance client extensions</tspan>, reverse-engineered</text>
+    <text x="0" y="78" class="desc-text">desktop tools, and tailored software architectures with zero overhead.</text>
+
+    <!-- Capabilities / Monospace Footer -->
+    <g transform="translate(0, 108)">
+      <text x="0" y="0" class="caps-tag">Client Architecture</text>
+      <circle cx="120" cy="-3.5" r="2.5" class="dot"/>
+      <text x="132" y="0" class="caps-tag">Reverse Engineering</text>
+      <circle cx="266" cy="-3.5" r="2.5" class="dot"/>
+      <text x="278" y="0" class="caps-tag">UI &amp; GPU Shaders</text>
+      <circle cx="396" cy="-3.5" r="2.5" class="dot"/>
+      <text x="408" y="0" class="caps-tag">Zero Bloat Systems</text>
+    </g>
   </g>
 </svg>
