@@ -1,33 +1,18 @@
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:18191c,100:5865f2&height=220&section=header&text=KEYREX%20DEVELOPMENT&fontSize=44&fontColor=ffffff&fontAlignY=38&desc=Software%20Architecture%20%E2%80%A2%20Client%20Modifications%20%E2%80%A2%20Desktop%20Tools&descAlignY=62&descAlign=50" width="100%" />
+  <img src="assets/header.svg" alt="Keyrex Development Banner" width="100%" />
 </p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/ENGINEERING-CLIENT%20MODIFICATIONS-111214?style=for-the-badge&logo=electron&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/CORE%20STACK-TS%20%2F%20JS%20%2F%20C%2B%2B-111214?style=for-the-badge&logo=typescript&logoColor=3178C6" />
-  <img src="https://img.shields.io/badge/COMMUNITY-KEYREX'S%20WARE-5865f2?style=for-the-badge&logo=discord&logoColor=white" />
+  <a href="https://discord.gg/">
+    <img src="https://img.shields.io/badge/COMMUNITY-KEYREX'S%20WARE-5865f2?style=for-the-badge&logo=discord&logoColor=white" />
+  </a>
 </p>
 
 ---
 
-### `//` ABOUT THE COLLECTIVE
-
-```
-$ keyrex --info
-┌────────────────────────────────────────────────────────────────────────┐
-│  KEYREX DEVELOPMENT // High-Performance Systems & Client Tools        │
-├────────────────────────────────────────────────────────────────────────┤
-│  • Focus Area    : Discord Client Hooks, Event Dispatchers, Shaders    │
-│  • Philosophy    : 0ms Overhead, Non-Destructive DOM, Pure Aesthetics  │
-│  • Primary Stack : JavaScript (ESNext), TypeScript, C++, Node.js       │
-└────────────────────────────────────────────────────────────────────────┘
-```
-
-**Keyrex Development** is an independent engineering collective dedicated to building ultra-fast desktop utilities, specialized client extensions, and bespoke user interfaces with zero performance compromises.
-
----
-
-### `//` FEATURED PROJECT
+### ✦ FEATURED PROJECT
 
 <table>
   <tr>
@@ -40,13 +25,7 @@ $ keyrex --info
       </h3>
       <p>
         <b>Modular Direct Messages Workspace Suite for BetterDiscord.</b><br>
-        Replaces standard Discord DM lists with an organized tree workspace, synchronous event-based audio interception (custom MP3 per user), zero-overhead 0ms React-Safe DOM ordering, and GPU-accelerated particle shaders.
-      </p>
-      <p>
-        <code>⚡ 0ms React DOM</code> &nbsp;•&nbsp; 
-        <code>🎧 Per-User Sound Routing</code> &nbsp;•&nbsp; 
-        <code>✨ Real-Time GPU Shaders</code> &nbsp;•&nbsp; 
-        <code>📁 Tree Categorization</code>
+        Organizes direct messages into custom categories with per-user audio interception, 0ms synchronous React-Safe DOM ordering, and real-time GPU shaders.
       </p>
       <p>
         <b>PowerShell One-Liner Install:</b><br>
@@ -58,7 +37,7 @@ $ keyrex --info
 
 ---
 
-### `//` TECH ARSENAL
+### ✦ TECH ARSENAL
 
 <p align="center">
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -69,15 +48,6 @@ $ keyrex --info
   <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=cplusplus&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
-</p>
-
----
-
-### `//` GITHUB ACTIVITY & METRICS
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=keyrexdevelopment&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d0d0d&title_color=5865f2&icon_color=5865f2&text_color=e0e0e0" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=keyrexdevelopment&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d0d0d&title_color=5865f2&text_color=e0e0e0" width="48%" />
 </p>
 
 ---
