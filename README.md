@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/banner.png" alt="Keyrex Development" width="100%" />
-</p>
-
 <table width="100%" align="center" border="0" cellspacing="10" cellpadding="0">
   <!-- ROW 1: ABOUT & WELCOME -->
   <tr>
@@ -13,7 +9,7 @@
     </td>
   </tr>
 
-  <!-- ROW 2: FEATURED WORK SHOWCASE -->
+  <!-- ROW 2: FEATURED WORK -->
   <tr>
     <td colspan="2" width="100%" valign="top">
       <a href="https://github.com/keyrexdevelopment/keyware-dms">
