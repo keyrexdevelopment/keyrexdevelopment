@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 95" width="800" height="95">
+  <defs>
+    <clipPath id="reveal">
+      <rect x="180" y="34" width="0" height="28">
+        <animate attributeName="width" from="0" to="440" dur="1.6s" begin="0.15s" fill="freeze"/>
+      </rect>
+    </clipPath>
+
+    <style>
+      .mono {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+      }
+      .arch {
+        fill: #ffffff;
+        fill-opacity: 0.55;
+        font-size: 11px;
+        letter-spacing: 2px;
+      }
+      .cmd {
+        fill: #ffffff;
+        font-size: 13px;
+        font-weight: 600;
+      }
+      .status {
+        fill: #ffffff;
+        fill-opacity: 0.65;
+        font-size: 10.5px;
+        letter-spacing: 1.5px;
+        opacity: 0;
+        animation: fadeIn 0.5s ease forwards 1.6s;
+      }
+      .dim {
+        fill: #ffffff;
+        fill-opacity: 0.38;
+      }
+      .dot {
+        fill: #ffffff;
+        animation: pulse 2s ease-in-out infinite 2.1s;
+      }
+      .cursor {
+        fill: #ffffff;
+        animation: blink 1s step-end infinite;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+      @keyframes pulse {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.25; }
+      }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+    </style>
+  </defs>
+
+  <text x="400" y="22" text-anchor="middle" class="mono arch" xml:space="preserve">[  LUAU VM   ·   NET FILTER   ·   KINEMATICS   ·   C++ / TS  ]</text>
+
+  <text x="400" y="54" text-anchor="middle" class="mono cmd" clip-path="url(#reveal)">$ keyrex-ac --attach --mode=deterministic<tspan class="cursor">_</tspan></text>
+
+  <text x="400" y="82" text-anchor="middle" class="mono status" xml:space="preserve"><tspan class="dim">───   </tspan><tspan class="dot">●</tspan>  status: armed   //   0.01ms overhead<tspan class="dim">   ───</tspan></text>
+</svg>
