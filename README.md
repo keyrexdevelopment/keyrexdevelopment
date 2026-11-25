@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="assets/banner.png" width="100%" alt="keyrex — roblox / ac" />
+  <img src="assets/banner.png" width="75%" alt="keyrex — roblox / ac" />
 </p>
 
 <p align="center">
-  <img src="assets/terminal_ac.svg" width="100%" alt="keyrex-ac — runtime telemetry" />
+  <img src="assets/telemetry_v2.svg" width="100%" alt="keyrex // luau vm &amp; network telemetry" />
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/FOCUS-ROBLOX%20ANTI--CHEAT-111214?style=for-the-badge&logo=roblox&logoColor=white" />
-  <img src="https://img.shields.io/badge/CORE%20STACK-LUAU%20%2F%20TS%20%2F%20C%2B%2B-111214?style=for-the-badge&logo=lua&logoColor=white" />
-  <img src="https://img.shields.io/badge/ARCHITECTURE-SERVER%20AUTHORITATIVE-111214?style=for-the-badge&logo=shield&logoColor=3FB950" />
+  <img src="https://img.shields.io/badge/FOCUS-ROBLOX%20ANTI--CHEAT-0a0a0a?style=for-the-badge&labelColor=18181b" />
+  <img src="https://img.shields.io/badge/STACK-LUAU%20%C2%B7%20C%2B%2B%20%C2%B7%20TS-0a0a0a?style=for-the-badge&labelColor=18181b" />
+  <img src="https://img.shields.io/badge/OVERHEAD-%3C%200.05MS%20DETERMINISTIC-0a0a0a?style=for-the-badge&labelColor=18181b" />
 </p>
